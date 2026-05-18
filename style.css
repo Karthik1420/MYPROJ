@@ -1,0 +1,207 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #ff8fab;
+    color: #ffe5ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.msg-container {
+    width: 100vw;
+    height: 3rem;
+    text-align: center;
+    padding-top: 1.6rem;
+}
+
+#msg {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+    transition: 0.2s;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    font-size: 2.8rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-box {
+    height: 30rem;
+    width: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.box {
+    border: none;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    color: #fb6f92;
+    background-color: #fff;
+    width: 9.2rem;
+    height: 9.2rem;
+    box-shadow: 5px 5px 9px #00000048;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #fb6f92;
+    color: white;
+    transition: 0.2s;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Unified button styles */
+.btn {
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: #fb6f92;
+    color: #ffe5ec;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    box-shadow: 2px 2px 9px #00000048;
+    transition: 0.2s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    color: #fb6f92;
+    background-color: #ffe5ec;
+}
+
+
+.hide{
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+    .game-box {
+        height: 25rem;
+        width: 25rem;
+        gap: 0.8rem;
+    }
+
+    .box {
+        width: 7.8rem;
+        height: 7.8rem;
+        font-size: 2rem;
+    }
+
+    #msg {
+        font-size: 2.7rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding: 1.5rem;
+    }
+
+    .btn {
+        width: 9rem;
+        height: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .game-box {
+        height: 22rem;
+        width: 22rem;
+        gap: 0.6rem;
+    }
+
+    .box {
+        width: 6.6rem;
+        height: 6.6rem;
+        font-size: 1.8rem;
+    }
+
+    #msg {
+        font-size: 2.2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 1.2rem;
+    }
+
+    .btn {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 450px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+    }
+    .game-box {
+        /* margin-top: 1rem; */
+        height: 18rem;
+        width: 18rem;
+        gap: 0.5rem;
+    }
+
+    .box {
+        width: 5.5rem;
+        height: 5.5rem;
+        font-size: 1.5rem;
+    }
+    .msg-container{  /**/
+        /* height: 3rem; */
+        padding: 3rem 2rem 0 2rem;
+    }
+
+    #msg {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        padding: 3rem 0 0 0;
+    }
+
+    .btn {
+        width: 7rem;
+        height: 2.3rem;
+        font-size: 0.85rem;
+    }
+}
